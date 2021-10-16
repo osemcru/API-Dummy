@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "f47168c6-6d8c-4dde-bffb-122dfe4134c8",
+		"name": "Universidad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Desarrollo En Equipo",
+			"item": [
+				{
+					"name": "Lambdas Bases de Datos",
+					"item": [
+						{
+							"name": "Guardar Usuarios",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"email\": \"niduga@outlook.es\",\n    \"username\":\"papugarces\",\n    \"password\":\"ewew\",\n    \"name\":\"Nicolas Duran Garces\", \n    \"phone\":\"3057970008\",\n    \"type\": \"F\",\n    \"father_id\": 25\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dev/guardarusuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dev",
+										"guardarusuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Inicio de Sesion en El Sistema",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\":\"kljklkl\",\n    \"password\":\"\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dev/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dev",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminacion de Usuarios",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "Encender LUZ",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\":\"example\",\n    \"house_id\":\"1\",\n    \"deviceType\":\"LIGHT\",\n    \"device_id\":\"4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dev/encender",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dev",
+										"encender"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Manejo Historial",
+					"item": [
+						{
+							"name": "Historia de Activacion de Dispositvos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n            \"history_id\": \"nombre-fecha\",\n            \"user_id\": \"100917211323\",\n            \"type\": \"\",\n            \"father_id\": \"wew\",\n            \"house_id\": \"Ejemplo\",\n            \"name\": \"Nicolas Duran\",\n            \"config\": \"2\",\n            \"devic_id\": \"dsdsd\",\n            \"device_type\": \"LED\",\n            \"location\": \"Cuarto Principal\",\n            \"creaAt\": \"FechaActual\"\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dev/uploadHistory",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dev",
+										"uploadHistory"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Broker",
+					"item": [
+						{
+							"name": "Historia de Activacion de Dispositvos Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3001/v1/broker?message=variable",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"v1",
+										"broker"
+									],
+									"query": [
+										{
+											"key": "message",
+											"value": "variable"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
